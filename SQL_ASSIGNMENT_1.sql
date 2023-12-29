@@ -1,0 +1,25 @@
+-- Assignment 1
+use mavenmovies;
+Select * from information_schema.key_column_usage;
+select * from actor; 
+select * from customer;
+select * from customer where first_name like 'b%' limit 3;
+select * from film;
+select title from film where rating = 'G' limit 5;
+select * from customer;
+select * from customer where first_name like 'a%';
+select * from customer where first_name like '%a';
+select * from city;
+select * from city where city like 'a%a' limit 4;
+select * from customer;
+select * from customer where first_name like '%NI%';
+select * from customer where first_name like '_r%';
+select * from customer where first_name like 'a____%';
+select * from customer where first_name like 'a%o';
+select * from film;
+select * from film where rating in ('PG','PG-13');
+select * from film where length between 50 and 100;
+select * from actor;
+select * from actor limit 50;
+select * from inventory;
+select distinct film_id from inventory;
